@@ -1,0 +1,135 @@
+<html>
+
+<head>
+
+<title>JavaScript Comment Board</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+<script>
+	var baseurl = "{{base_url()}}"
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="pb-2 mt-4 mb-2 border-bottom">
+	<h1>My Fake Blog</h1>
+</div>
+
+<!-- Login Form -->
+<form id="login-form">
+	<div class="form-group">
+		<label for="exampleInputEmail1">Username</label>
+		<input type="textbox" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Username">
+	</div>
+
+	<div class="form-group">
+		<label for="exampleInputPassword1">Password</label>
+		<input type="password" class="form-control" id="password" placeholder="Password">
+	</div>
+	
+	<div id="invalid-login" class="alert-danger p-2 mb-2 d-none">That password is wrong YOU CRIMINAL.</div>
+	<button id="submit-btn" type="submit" class="btn btn-primary">Submit</button>
+</form>
+<!-- End login form -->
+
+
+<!-- Welcome message -->
+<div id="dashboard" class="d-none">
+	<h4>Hello, <user> </user>! <p>(<a id="logout" href="#"><em>logout</em></a>)</p> </h4>
+
+	
+</div>
+<!-- End welcome message -->
+
+<div class="row col-md-8 col-md-offset-2">
+
+<h2>Post About Thing</h2>
+
+<p>
+This is a wall of text. This is a wall of text. This is a wall of text. 
+This is a wall of text. This is a wall of text. This is a wall of text. 
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text. 
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text. 
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text. 
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+This is a wall of text. This is a wall of text. This is a wall of text.
+</p>
+
+<div id="comment-form" class="d-none">
+	<div class="card w-100">
+		<h3 class="card-header">Add a comment</h3>
+		<div class="card-body">
+			<form>
+				<p id="comment-warning" class="d-none" style="color:red">Comment cannot be blank</p>
+				<div class="form-group">
+					<textarea id="comment" rows="4" cols="60" class="form-control" placeholder="Comment"></textarea>
+				</div>
+				<div class="form-group">
+					<button id="submit-comment" class="btn btn-primary">Post</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="card w-100 mt-3 comm-card" id="comment-card" hidden="true">
+	<div class="card-header">
+		<div class="row">
+			<div class="col-md-11">
+				<h4>etomai</h4>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="card-body">
+		<p>This is my comment.  I think the post is too long.</p>
+	</div>
+</div>
+
+
+
+</div>
+
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="moment.min.js"></script>
+<script src="comment.js"></script>
+<script src="app.js"></script>
+
+</script>
+
+</body>
+
+</html>

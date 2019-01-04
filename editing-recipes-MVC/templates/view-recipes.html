@@ -1,0 +1,35 @@
+{% extends "test-layout.html" %}
+
+{% block title %}
+Recipes | Home
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h1 class="mb-4 mt-4" style="font-family:'Times New Roman', Times, serif; margin-left: auto; margin-right: auto;">Delicious Recipies</h1>
+    </div>
+    
+    <div class="row">  
+        {% for recipe in recipes %}
+        <div class="mr-5">
+            <div class="card mb-4" style="width: 18rem;">
+                <img class="card-img-top" src="{{ recipe.imageurl }}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><strong><a href="{{ path_for('view-recipe', {'id': recipe.id}) }}">{{ recipe.name }}</a></strong></h5>
+                    <p class="card-text">{{ recipe.description}}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Prep Time: {{ recipe.preptime }} mins</li>
+                    <li class="list-group-item">Total Time: {{ recipe.totaltime}} mins</li>
+                </ul>
+            </div>
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+{% endblock %} 
+

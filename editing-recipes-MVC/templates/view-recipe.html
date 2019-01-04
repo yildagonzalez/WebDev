@@ -1,0 +1,67 @@
+{% extends "test-layout.html" %}
+
+{% block script %}
+<script src="{{ base_url() }}/../../recipe.js"></script>
+{% endblock %}
+
+{% block title %}
+Recipe | Detail
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+
+        <ul class="nav nav-tabs mt-4">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path_for('recipes') }}">Home</a>
+            </li>
+        </ul>
+    
+        <div class="row">
+            <h1 class="mt-4 mb-4" style="font-family:'Times New Roman', Times, serif"><recipe-name id="{{ recipe.id }}">{{ recipe.name }}</recipe-name></h1>
+        </div>
+
+        <div class="row mt-4 mb-4">
+            <div class="col-lg-4 mr-4 mb-4">
+                <img class="border rounded-circle" style="width:300px; height:300px" src="{{ recipe.imageurl }}" alt="Card image cap">
+                   
+            </div>
+
+            <div class="col-lg-4">
+                <p>{{ recipe.description }}</p>
+                <hr>
+                <span class="badge badge-pill badge-danger">Prep Time: {{ recipe.preptime }} mins</span>
+                <br>
+                <span class="badge badge-pill badge-success">Total Time: {{ recipe.totaltime }} mins</span>
+            </div>
+        </div>
+        
+         <!-- li to clone -->
+        <li id="{{ step.stepnumber }}"  class="ui-state-default list-group-item d-flex list-group-item-action float-none clone-li" style="display: none !important">
+            <span class="badge badge-danger badge-pill mr-4" style="height:20px; width:20px">{{ step.stepnumber }} </span> 
+            <step-description id="{{ step.id }}">{{ step.description }}</step-description> 
+        </li>
+         <li class="list-group-item active">DIRECTIONS</li>
+        <ul id="steps-list" class="list-group sortable">
+           
+        
+        {% for step in steps %}
+            
+            <!-- Actual list -->
+            <li id="{{ step.stepnumber }}" class="ui-state-default list-group-item d-flex list-group-item-action float-none">
+                <span class="badge badge-danger badge-pill mr-4" style="height:20px; width:20px">{{ step.stepnumber }} </span> 
+                <step-description id="{{ step.id }}">{{ step.description }}</step-description> 
+            </li>
+
+        
+        {% endfor %}
+        </ul>
+
+        <div><button id="add-btn" class="btn btn-success border m-1 fas fa-plus mt-4" style="float:right"></button></div>
+
+                
+
+            
+        </div>
+    </div>
+{% endblock %}

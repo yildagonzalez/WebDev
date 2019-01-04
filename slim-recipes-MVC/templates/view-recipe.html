@@ -1,0 +1,48 @@
+{% extends "test-layout.html" %}
+
+{% block title %}
+Recipe | Detail
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <h1 class="mt-4 mb-4" style="font-family:'Times New Roman', Times, serif">{{ recipe.name }}</h1>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-lg-4 mr-4 mb-4">
+                <img class="border rounded-circle" style="width:300px; height:300px" src="{{ recipe.imageurl }}" alt="Card image cap">
+                   
+            </div>
+
+            <div class="col-lg-4">
+                <p>{{ recipe.description }}</p>
+                <hr>
+                <span class="badge badge-pill badge-danger">Prep Time: {{ recipe.preptime }} mins</span>
+                <br>
+                <span class="badge badge-pill badge-success">Total Time: {{ recipe.totaltime }} mins</span>
+            </div>
+        </div>
+        
+        
+        <ul class="list-group">
+            <li class="list-group-item active">DIRECTIONS</li>
+
+        {% for step in steps %}
+        
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                {{ step.description}}
+            <span class="badge badge-primary badge-pill">{{ step.stepnumber }}</span>
+            </li>
+        
+        
+        {% endfor %}
+        </ul>
+
+                
+
+            
+        </div>
+    </div>
+{% endblock %}

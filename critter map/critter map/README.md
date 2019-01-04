@@ -1,1 +1,0 @@
-# init_assn06_critter_map
