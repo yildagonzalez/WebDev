@@ -1,0 +1,24 @@
+
+[
+    {
+    "score" : "9.9",
+    "url" : "https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ",
+    "title" : "YouTube",
+    "excerpt" : "Music is an art form and cultural activity whose medium is sound organized in time. In general definitions of music will include common elements such as pitch, rhythm, dynamics, and the sonic qualities of timbre and texture. "
+    },
+
+    {
+        "score" : "5.6",
+        "url" : "https://en.wikipedia.org/wiki/Google_Play_Music",
+        "title" : "Google Play Music",
+        "excerpt" : "Google Play Music is a music and podcast streaming service and online music locker operated by Google."
+    },
+
+    {
+        "score" : "7.5",
+        "url" : "https://www.rollingstone.com/music/",
+        "title" : "Rolling Stone Music",
+        "excerpt" : "The Rolling Stones are an English rock band formed in London, England, in 1962. The first stable line-up consisted of Brian Jones, Mick Jagger, Keith Richards, Bill Wyman, Charlie Watts, and Ian Stewart."
+    }
+
+]

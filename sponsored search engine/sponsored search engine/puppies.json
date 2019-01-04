@@ -1,0 +1,24 @@
+
+[
+    {
+    "score" : "9.8",
+    "url" : "http://mentalfloss.com/article/536413/facts-about-puppies",
+    "title" : "Labs are the best!",
+    "excerpt" : "Puppies are functionally blind and deaf at birth. On day one, their eyes are firmly shut and their ear canals closed. Why? In brief, it’s part of an evolutionary trade-off. Since pregnancy can hurt a carnivore's ability to chase down food, dogs evolved to have short gestation periods."
+    },
+
+    {
+        "score" : "1.8",
+        "url" : "http://trupanion.com/blog/2016/07/fun-facts-about-puppies/",
+        "title" : "Puppies Rule",
+        "excerpt" : "Like many newborn mammals, puppies are born completely toothless. At 2 to 4 weeks of age, a puppy's 28 baby teeth will start to come in. Around 12 to 16 weeks old, those baby teeth fall out, and by the time pups are 6 months old, they should be sporting a set of 42 adult teeth."
+    },
+
+    {
+        "score" : "3.5",
+        "url" : "https://www.animalfactsencyclopedia.com/Puppy-facts.html",
+        "title" : "Fluffly Pups",
+        "excerpt" : "Like children, puppies need a lot of sleep—up to 15 to 20 hours of it a day. The American Kennel Club strongly advises dog owners to resist the urge to disturb napping puppies, because sleep is critical for a young canine's developing brain, muscles, and immune system. "
+    }
+
+]

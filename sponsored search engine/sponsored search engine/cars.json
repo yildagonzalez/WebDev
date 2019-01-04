@@ -1,0 +1,24 @@
+
+[
+    {
+    "score" : "5.6",
+    "url" : "https://www.cars.com/",
+    "title" : "Learn All About Cars",
+    "excerpt" : "A car (or automobile) is a wheeled motor vehicle used for transportation. Most definitions of car say they run primarily on roads, seat one to eight people, have four tires, and mainly transport people rather than goods."
+    },
+
+    {
+        "score" : "3.5",
+        "url" : "https://www.carmax.com/cars",
+        "title" : "Best Cars of 2018",
+        "excerpt" : "Every trim level of the new Sonata comes standard with blind-spot detection, rear cross-traffic alert and lane change assistant. A new lane-keep-assist technology is standard on the Limited 2.0T trim, and available on the SEL and Limited trims."
+    },
+
+    {
+        "score" : "7.4",
+        "url" : "https://www.theverge.com/cars",
+        "title" : "The Cars of the Future",
+        "excerpt" : "the development of the AirCar: a self-contained four-door, four-to-five-seat aircraft (flying car) with a foldable main wing in the rear of the vehicle and a canard (which increases an aircraft's stability) in the front. "
+    }
+
+]
